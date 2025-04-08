@@ -7,5 +7,7 @@
 </head>
 <body>
     <a href="./accueil.html">Accueil</a>
+    <a href="./formulaire.html">Formulaire</a>
+    <a href="./promo.html">Promo</a>
 </body>
 </html>
