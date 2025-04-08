@@ -1,0 +1,50 @@
+Mathieu Lafontaine - 2496162 - Post Mortem
+
+Fonctionnalités de la page:
+
+Il s'agit d'une page promotionnelle. Elle comprends une navigation, un carrousel et un petit article. 
+
+Navigation: Cell-ci est générée dynamiquement avec JavaScript dans le fichier navigation.js. Le logo situé
+sur la gauche slide vers la droite lors de l'ouverture de la page. Un effet de transition sur les liens de la navigation
+change la couleur selon le mode jour ou nuit lors d'un hover. Dernièrement, un bouton de mode jour/nuit est sur
+la droite de la page. Celle-ci tourne à 90 degrés, puis revient à sa position originale lors du chargement de la page
+ET lors du clique. La navigation est verte pastel car le thème du magasin de choix est un magasin de fleurs tout simplement.
+Une triade de couleur a été établie sur Adobe Couleur avec le vert comme couleur principale. Le bleu des boutons et le rose des
+filtres de la page accueil font tous parties de la triade. Puisque cette couleur était très pale, j'ai choisi
+un vert un peu plus foncé lors du changement au mode nuit afin d'éviter un contrastre trop élevé entre la navigation 
+le background.
+
+Carrousel: Trois promotions changent automatiquement. Considérant le printemps qui s'en vient, Pâques et la fête des
+mères (qui selon mon fleuriste, atteste que c'est la journée la plus occupée de l'année), il fesait sens de mettre
+des promotions qui target ces trois éléments là. Deux boutons en flèches sont placés de chaque côtés de la bannière et 
+permettent à l'utilisation de naviguer entre les bannières. Un effet de transition rend le changement entre les images
+mois aggressant à la vue. Un effet de zoom qui se loop tant que la souris reste sur les flèches a été. Cet effet est
+retiré dès que la souris quitte le bouton.
+
+Article: Trois elements de retrouvent dans l'article, tous en lien avec une activité de Foraging qui pourrait être 
+offerte. J'adore ce type d'activité personnellement et il s'agit d'un mouvement qui a pris de l'ampleur depuis la pandémique.
+Plusieurs boutiques offrent des activités promotionnel, alors cela fait du sens que la boutique de fleur ait également
+une activité de ce genre. Il s'agit de publicité après tout! Les textes et images sont en altérnance, ce qui rend le tout 
+un peu esthétiquement plaisant.
+
+
+Difficultés rencontrés: 
+
+La plus grande difficulté que j'ai a été de trouver comment faire fonctionner la classe ScrollAnimator. Il s'agit 
+d'une nouvelle notion qui est très différente d'une fonction comme nous avons fait usage tout le long de la session.
+Suite à notre discussion en classe, j'ai tout de même dû cogiter pas mal avant de trouver encore une fois une erreur
+typographique dans mon code qui rendant la classe non-fonctionnelle (et qui a brisé la page en fait). Ce qui me mène
+à ma deuxième difficulté: les erreurs typographiques. Les plus importante ont été un correction de mon code suite
+à une restructuration avec la méthode BEM plutôt que la celle employée, ce qui fait qu'une de mes classes en lien
+avec ma boite modale ne s'alignait pas correctement (comme vous avez vous en classe), puis un espace en trop dans mes animations
+de rotation (360 deg plutot que 360deg par exemple). Je dirais autrement que le coding Java c'est bien passé en sa généralité,
+la plus part de mes difficultés étant recontrées dans des erreurs de code CSS.
+
+Testing:
+Ma méthode de choix pour tester ma page a été de mettre des console.log PARTOUT. J'ai retiré la plus tard avec le temps,
+mais dès qu'un bug survenait, cela me sauvait vraiment la vie! J'ai absolument testé tous les composantes une à une, 
+vérifiant si les animations respectaient ce que j'avais comme vision en cliquant, hover et mouseleave les différentes
+composantes. De plus, j'ai fait usage de la page inspect dans Google Chrome plusieurs fois lors du travail pour vérifier 
+la position de ma boite modale.
+
+Lien GitHub Pages:

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script  type="module" src="./assets/js/accueil.js"></script>
+    <title>Accueil TP1</title>
+  </head>
+  <body data-theme="jour">
+    <header class="navigation_en-tete">
+      <img src="./assets/img/LogoFinal.svg" alt="logo" class="logo" />
+      <nav id="nav-principale">
+        <ul class="nav__liste"></ul>
+      </nav>
+      <nav data-mode-conteneur class="bouton__conteneur__modeNuit">
+        <!--Source pour les svg: www.svgrepo.com-->
+        <img src="./assets/img/soleil.svg" alt="mode_jour" class="bouton__modeNuit" data-mode-option="jour" />
+        <img src="./assets/img/lune.svg" alt="mode_nuit" class="bouton__modeNuit invisible" data-mode-option="nuit" />
+      </nav>
+    </header>
+    <main class="contenu__principal">
+      <section class="contenu__principal__contenu">
+      <aside>
+        <div class="detail">
+          <img class="imgFleur" src="" alt="" />
+          <h2 class="especeFleur"></h2>
+          <h3 class="uniteFleur"></h3>
+          <h3 class="bouquetFleur"></h3>
+          <h3 class="enStockFleur"></h3>
+        </div>
+      </aside>
+      <section>
+        <div class="section-header">
+          <h1>Liste des produits</h1>
+          <div class="filtres">
+            <div class="bouton filtre" id="tri-alpha-croissant">Par ordre alphabétique (A-Z)</div>
+            <div class="bouton filtre" id="tri-prix-unitaire">Par prix unitaire</div>
+            <div class="bouton filtre" id="tri-prix-bouquet">Par prix de bouquet</div>
+          </div>
+        </div>
+        <div class="grilleProduits"></div>
+      </section>
+    </section>
+    </main>
+  </body>
+</html>

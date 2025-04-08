@@ -1,0 +1,42 @@
+/*liens dans la navigation*/
+
+.nav__liste a {
+    text-decoration: none;
+    color: var(--couleur-texte);
+    transition: all 350ms;
+  }
+  .nav__liste a:hover {
+    color: var(--couleur-lien-hover);
+    text-decoration: underline;
+  }
+  .nav__liste a.actif {
+    color: #133a01;
+    font-style: italic;
+    font-weight: bolder;
+  }
+
+/* En-tete et nav principale */
+.navigation_en-tete {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    padding: 2rem;
+    background-color: var(--couleur-navigation);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  [id="nav-principale"] {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  nav .nav__liste {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  

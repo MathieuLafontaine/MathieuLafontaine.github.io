@@ -1,0 +1,18 @@
+
+/*Mode jour et nuit*/
+
+[data-theme="jour"]:not(.banniere_texte) {
+    --couleur-fond: #f7f6f5;
+    --couleur-texte: black;
+    --couleur-lien-hover: #63775d;
+    --couleur-navigation: #b1d6a7;
+    transition-duration: 0.4s;
+  }
+  
+  [data-theme="nuit"]:not(.banniere_texte) {
+    --couleur-fond: #3c3c3c;
+    --couleur-texte: #f7f6f5;
+    --couleur-lien-hover: #b1d6a7;
+    --couleur-navigation: #63775d;
+    transition-duration: 0.4s;
+  }

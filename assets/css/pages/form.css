@@ -1,0 +1,41 @@
+/*Styling du formulaire*/
+form,
+.message {
+  padding: 1em;
+}
+
+form * {
+  margin-top: 15px;
+}
+
+form > section > *:last-child {
+  margin-bottom: 15px;
+}
+
+form > section {
+  border-radius: 1%;
+  border: 1px solid #dedeff;
+}
+
+button {
+  background-color: #dedeff;
+}
+
+/*Ajout des classes creer dynamiquement dans le code javascript*/
+
+.inactive {
+  pointer-events: none;
+}
+
+.invalid {
+  border: 1px dashed red;
+}
+
+.valid {
+  border: 1px solid green;
+}
+
+input:disabled {
+  border: black 1px;
+  background-color: #dbdbdb;
+}

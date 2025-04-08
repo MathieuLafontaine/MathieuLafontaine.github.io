@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travail pratique 2</title>
+    <script type="module" src="./assets/js/formulaire.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-theme="jour">
+    <header class="navigation_en-tete">
+      <img src="./assets/img/LogoFinal.svg" alt="logo" class="logo" />
+      <nav id="nav-principale">
+        <ul class="nav__liste"></ul>
+      </nav>
+      <nav data-mode-conteneur class="bouton__conteneur__modeNuit">
+        <!--Source pour les svg: www.svgrepo.com-->
+        <img src="./assets/img/soleil.svg" alt="mode_jour" class="bouton__modeNuit" data-mode-option="jour" />
+        <img src="./assets/img/lune.svg" alt="mode_nuit" class="bouton__modeNuit invisible" data-mode-option="nuit" />
+      </nav>
+    </header>
+    <form action="#" method="post" class="contenu__principal">
+      <h1>Formulaire d'achat</h1>
+      <section data-page="1">
+        <h2>Informations sur le client</h2>
+        <div class="input-group">
+          <label for="first_name">Prénom</label>
+          <input type="text" id="first_name" name="first_name" required />
+        </div>
+        <div class="input-group">
+          <label for="last_name">Nom</label>
+          <input type="text" id="last_name" name="last_name" required />
+        </div>
+        <div class="input-group">
+          <label for="email">Addresse Courriel</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="input-group">
+          <label for="text_message"
+            >Obtenir une notification par messagerie texte lorsque la commande sera complétée</label
+          >
+          <input type="checkbox" id="text_message" name="text_message" />
+        </div>
+        <div class="input-group">
+          <label for="tel">Numéro de téléphone</label>
+          <input type="tel" id="tel" name="tel" disabled />
+        </div>
+      </section>
+      <section data-page="2">
+        <h2>Informations sur la livraison</h2>
+        <div class="input-group">
+          <label for="shipping">Methode de livraison</label>
+          <select name="shipping" id="shipping">
+            <option value="1" selected>Cueillette sur place</option>
+            <option value="2">Livraison postale</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="address">Numéro civique et nom de rue</label>
+          <input type="text" id="address" name="address" disabled />
+        </div>
+        <div class="input-group">
+          <label for="city">Ville</label>
+          <input type="text" id="city" name="city" disabled />
+        </div>
+        <div class="input-group">
+          <label for="postal_code">Code Postal</label>
+          <input type="text" id="postal_code" name="postal_code" disabled />
+        </div>
+      </section>
+      <section class="summary" data-page="3">
+        <h2>Résumé</h2>
+        <p>Nom: <span data-field="first_name"></span><span> </span><span data-field="last_name"></span></p>
+        <p>Mode de livraison: <span data-field="shipping">Cueillette sur place</span></p>
+        <p class="summary_address invisible">
+          Adresse: <span data-field="address"></span><span>, </span> <span data-field="city"></span><span>, </span>
+          <span data-field="postal_code"></span>
+        </p>
+        <p class="summary_tel invisible">Numéro de telephone: <span data-field="tel"></span></p>
+        <!--Petit placeholder qui agit comme si nous avions un panier actif-->
+        <p>Articles achetés: <span>1x Bouquet Pivoine Chinoise 18$</span></p>
+      </section>
+      <button type="button" data-direction="-1">Précédent</button>
+      <button type="button" data-direction="1">Suivant</button><br />
+      <input type="submit" value="Envoyer" />
+    </form>
+    <p class="message"></p>
+  </body>
+</html>

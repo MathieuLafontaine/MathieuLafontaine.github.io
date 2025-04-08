@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script type="module" src="assets/js/promo.js"></script>
+    <title>À propos</title>
+  </head>
+  <body data-theme="jour">
+    <header class="navigation_en-tete">
+      <img src="./assets/img/LogoFinal.svg" alt="logo" class="logo" />
+      <nav id="nav-principale">
+        <ul class="nav__liste"></ul>
+      </nav>
+      <nav data-mode-conteneur class="bouton__conteneur__modeNuit">
+        <!--Source pour les svg: www.svgrepo.com-->
+        <img src="./assets/img/soleil.svg" alt="mode_jour" class="bouton__modeNuit" data-mode-option="jour" />
+        <img src="./assets/img/lune.svg" alt="mode_nuit" class="bouton__modeNuit boite-modale__invisible" data-mode-option="nuit" />
+      </nav>
+    </header>
+    <main class="contenu__principal">
+      <section class="contenu__principal__conteneur">
+        <header>
+          <h1 class=" scroll__animator">Profitez de nos Promotions</h1>
+        </header>
+        <div class="carrousel">
+          <div class="carrousel__conteneur">
+          <div class="carrousel_promo_bouquet carrousel_banniere contenu__principal__contenu  scroll__animator" data-ordre="1">
+            <div class="carrousel_texte">
+              <h3>Bonne fête des Mères!</h3>
+              <p>Profitez de 20% de rabais sur l'achat de bouquet dès le 1er Mai!</p>
+              <a href="#" class="bouton">En savoir plus</a>
+            </div>
+          </div>
+          <div class="carrousel_promo_graines carrousel_banniere contenu__principal__contenu invisible  scroll__animator" data-ordre="2">
+            <div class="carrousel_texte">
+              <h3>Vive le printemps!</h3>
+              <p>Toutes les graines de fleur à jusqu'à 30% de rabais!</p>
+              <a href="#" class="bouton">En savoir plus</a>
+            </div>
+          </div>
+          <div class="carrousel_promo_paque carrousel_banniere contenu__principal__contenu invisible  scroll__animator" data-ordre="3">
+            <div class="carrousel_texte">
+              <h3>Joyeuse Pâques!</h3>
+              <p>Célèbrez Pâques avec un rabais de 15% sur tous les articles en magasins!</p>
+              <a href="#" class="bouton">En savoir plus</a>
+            </div>
+          </div>
+          <div class="carrousel__controles">
+            <div data-direction="-1" class="interactif"><img class="bouton__carrousel" src="./assets/img/fleche-gauche.svg" alt="fleche-gauche"></div>
+            <div data-direction="1" class="interactif"><img class="bouton__carrousel" src="./assets/img/fleche-droite.svg" alt="fleche-gauche"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </section>
+      <section class="contenu__principal__conteneur">
+        <header>
+          <h1 class="scroll__animator">Activité de « foraging »</h1>
+        </header>
+        <div class="contenu__principal__contenu scroll__animator">
+          <img src="./assets/img/foraging1.jpg" alt="image_foraging_1" class="contenu__principal__article__image" />
+          <article class="contenu__principal__article__texte">
+            <p>
+              Quatre activité de « foraging » sont planifiées par année en partenariat avec « Foraging Québec », soit
+              une fois par saison. Ces sessions traitent notamment d'identification fongique, identification de plantes
+              comestibles, cuisine sauvage, cueillette de fleurs sauvages et bien plus encore!
+            </p>
+          </article>
+        </div>
+        <div class="contenu__principal__contenu scroll__animator">
+          <article class="contenu__principal__article__texte">
+            <p>
+              Vous êtes interessez ou vous desirez en savoir plus? Veuillez consultez la page de « Foraging Québec » et
+              compléter le formulaire de participation. Bénéficiez de 20% de rabais pour toute inscription avant le 1er mai 2025!
+            </p>
+            <a href="#" class="bouton">Foraging Québec</a>
+          </article>
+          <img src="./assets/img/foraging2.jpg" alt="image_foraging_2" class="contenu__principal__article__image" />
+        </div>
+        <div class="contenu__principal__contenu scroll__animator">
+          <img src="./assets/img/foraging3.jpg" alt="image_foraging_3" class="contenu__principal__article__image" />
+          <article class="contenu__principal__article__texte">
+            <p>
+             Profitez de 30% de rabais sur tous nos articles de foraging! Ce rabais s'applique sur tous nos paniers, gants, chapeaux et bien plus!
+            </p>
+            <a href="#" class="bouton">Foraging Québec</a>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="contenu__pied-de-page">
+      </div>
+      <p class="contenu__pied-de-page__droits">&copy;Tous droits réservés</p>
+    </footer>
+  </body>
+  <div data-boite-modale class="boite-modale__conteneur"></div>
+</html>

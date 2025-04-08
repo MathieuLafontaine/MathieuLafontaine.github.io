@@ -1,0 +1,41 @@
+/*Style des boutons de la page promotionnelle*/
+
+.bouton {
+    padding: 0.5em 0.65em;
+    color: black;
+    background-color: #dedeff;
+    border-radius: 0.2em;
+    transition-delay: 0.05s;
+    max-width: max-content;
+    max-height: fit-content;
+    text-align: center;
+    margin-top: 48px;
+    text-decoration: none;
+  }
+  
+  .bouton:hover {
+    background-color: #a8a7d6;
+    color: #fff;
+    transition-duration: 0.4s;
+  }
+  
+  .bouton:not(input) {
+    display: block;
+  }
+
+  /*Bouton du mode nuit et jour*/
+  
+  .bouton__modeNuit {
+    position: absolute;
+    cursor: pointer;
+    max-width: 2vw;
+    max-height: 2vw;
+  }
+  
+  /*Bouton du carrousel*/
+  .bouton__carrousel {
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+    pointer-events: auto;
+  }

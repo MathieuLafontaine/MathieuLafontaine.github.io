@@ -1,0 +1,20 @@
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Général */
+@import url("./reset.css");
+
+/* Composants */
+@import url("./components/navigation.css");
+@import url("./components/bouton.css");
+@import url("./components/carrousel.css");
+@import url("./components/boiteModale.css");
+@import url("./components/modeNuit.css");
+
+/*Pages*/
+@import url("./pages/form.css");
+@import url("./pages/produits.css");
+
+/*General*/
+@import url("./general/contenu.css");
+@import url("./general/general.css");

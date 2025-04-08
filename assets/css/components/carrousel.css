@@ -1,0 +1,89 @@
+/*Caroussel*/
+
+.carrousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.carrousel__conteneur {
+  margin: 0 auto 0 auto;
+  width: 95%;
+  height: 55vh;
+  max-width: 100rem;
+  position: relative;
+}
+
+/*Styling qui permet aux boutons d'être placées à chacun des côtés du carrousel et par-dessus celui-ci*/
+.carrousel__controles {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  }
+
+  
+  .carrousel__controles .interactif {
+    display: flex;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+
+  /*Animations qui seront toggle on et off avec java-script*/
+  .zoom__in {
+    transform: scale(2);
+  }
+
+  .zoon__out {
+    transform: scale(1);
+  }
+
+/*Bannières promotionnelles*/
+
+.carrousel_promo_bouquet {
+  background-image: url("../../img/promo-bouquet.jpg");
+}
+
+.carrousel_promo_graines {
+  background-image: url("../../img/promo-graines.jpg");
+}
+
+.carrousel_promo_paque {
+  background-image: url("../../img/promo-paque.jpg");
+}
+
+.carrousel_banniere {
+  width: 100%;
+  min-height: 55vh;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 4px;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  position: absolute;
+}
+
+.carrousel_texte {
+  background-color: rgba(202, 201, 201, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 4px;
+}

@@ -1,0 +1,57 @@
+html {
+    font-size: 16px;
+  }
+  
+  html,
+  body {
+    background-color: var(--couleur-fond);
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 2rem;
+    padding-bottom: 8px;
+    text-align: left;
+    color: var(--couleur-texte);
+    border-bottom: 4px double var(--couleur-texte);
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .invisible {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  }
+
+  .visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  }
+
+  .blurry {
+    filter: blur(8px);
+  }
+  

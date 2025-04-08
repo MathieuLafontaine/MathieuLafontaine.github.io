@@ -1,0 +1,59 @@
+/*Boite Modale*/
+
+/*Ajout de position fixed, margins et flex afin de centrer la boite modale dans la page*/
+
+.boite-modale__conteneur {
+  position: fixed;
+  margin-top: 20%;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.boite-modale {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 200px;
+  text-align: center;
+
+  /*variables CSS qui matfh le mode jour ou nuit*/
+  border: 2px solid var(--couleur-texte);
+  background-color: var(--couleur-navigation);
+}
+
+/*animations en place pour les boutons*/
+  
+@keyframes rotationDisparait {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  
+  100% {
+    transform: rotate(360deg) scale(0);
+   }  
+}
+
+/*Style du bouton X de la boite modale*/
+.boite-modale > .bouton__modale{
+  padding: 8px 16px;
+  align-self: flex-end;
+  cursor: pointer;
+  border: 1px solid black ;
+  background-color: tomato;
+}
+
+.boite-modale > .bouton__modale:hover {
+  background-color: darkred;
+  color: white;
+}
+
+.boite-modale__fermeture {
+  animation: rotationDisparait 2s forwards;
+}
+
+.boite-modale__invisible {
+  display: none;
+}
